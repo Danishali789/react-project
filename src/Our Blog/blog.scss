@@ -1,0 +1,34 @@
+$p-font: sans-serif;
+$p-color: #ebe4dc;
+.ourblog{
+    background-color: $p-color;
+   .top-content{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        border-bottom: 2px solid red;
+    }
+    text-align: center;
+   }
+.blog{
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .Card{
+        border: none;
+        height: 40vh;
+        width:20vw;
+        margin: 3vw;
+        font-family: $p-font;
+        
+        Img{
+            height: 25vh;
+
+        }
+        
+    }
+}
+}

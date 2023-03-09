@@ -1,0 +1,39 @@
+@mixin con-btn($btn-mar) {
+    margin-right: $btn-mar;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.form-section{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgb(49, 44, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+.form{
+    width: 40vw;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    input,textarea{
+        margin-left: 5%;
+        margin-bottom: 10px;
+        width: 80%;
+    }
+    
+    button{
+        @include con-btn(20px);
+        &:last-child:hover{
+            background-color: rgb(124, 212, 124);
+        }
+        &:first-child:hover{
+            background-color: rgb(187, 2, 2);
+        }
+       
+    }
+   
+}
+}

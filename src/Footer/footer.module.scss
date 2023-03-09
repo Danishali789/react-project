@@ -1,0 +1,33 @@
+$t-color:white;
+@mixin p-style($col,$pad) {
+    background-color: $col;
+    padding-bottom: $pad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.mfooter{
+   @include p-style(rgb(235, 8, 8),20px);
+   .footer-link{
+     display: flex;
+     color: $t-color;
+     a{
+         margin: 10px 20px;
+     
+     &:hover{
+        color: blue;
+        text-decoration: underline;
+        cursor: pointer;
+     }
+    }
+     
+   }
+   .cright{
+    p{
+        color: $t-color;
+    }
+    
+   }
+
+}
